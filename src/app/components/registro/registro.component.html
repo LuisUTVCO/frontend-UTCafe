@@ -1,0 +1,62 @@
+<body>
+    <br>
+    <div class="container-fluid w-75 bg-primary rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-center">
+                    <h1><strong><img src='https://cdn-icons-png.flaticon.com/512/476/476844.png' class='imgRedonda'>
+                            Registro de usuario</strong></h1>
+                    <br>
+                    <div class="container-fluid cew-5 mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="col-md-11 mb-3">
+                                    <label class="form-label"><strong>Nombre</strong></label>
+                                    <input type="text" class="form-control" maxlength="10"
+                                        onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
+                                        placeholder="Crea un nombre de usuario" required>
+                                </div>
+                            </div>
+                            <div class="cot">
+                                <div class="mb-3">
+                                    <label class="form-label"><strong>E-mail</strong></label>
+                                    <input type="email" class="form-control" placeholder="Ingresa un e-mail" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container-fluid cew-8 mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="col-md-11 mb-3">
+                                    <label class="form-label"><strong>Contraseña</strong></label>
+                                    <input type="password" class="form-control" placeholder="Crea una contraseña"
+                                        min="6" max="10" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label class="form-label"><strong>Teléfono</strong></label>
+                                    <input type="input"
+                                        onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"
+                                        class="form-control" placeholder="Ingresa tu número de teléfono" maxlength="10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label"><strong>Imagen URL</strong>* <br> (Ingresa una URL diferente para foto
+                            de perfil)</label>
+                        <input type="url" class="form-control" placeholder="Ingresa una URL...">
+                    </div>
+                    <br>
+                    <button type="submit" value="Enviar" class="btn btn-primary">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</body>

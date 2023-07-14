@@ -1,0 +1,56 @@
+<body>
+    <br>
+    <div class="container-fluid w-75 bg-primary rounded shadow">
+        <div class="row align-items-stretch">
+
+            <div class="col bg-login d-none d-lg-block col-md-10 col-lg-5 col-xl-6">
+            </div>
+
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-end">
+                    <h1 class="fw-bold text-center py-4">Bienvenido</h1>
+                    <!-- LOGIN -->
+                        <div class="mb-15" class="text-left">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input class="form-control" type="email" placeholder="Ingresa tu correo electrónico" required> 
+                        </div>
+                        <br>
+                        <div class="mb-4" class="text-left">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña" required> 
+                        </div>
+                        <br>
+
+                        <div class="d-grid py-3">
+                            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                        </div>
+
+                        <div class="my-3" class="text-center">
+                            <span align="center">¿Aún no tienes una cuenta? Crea una aquí <a routerLink="/register">Regístrate</a></span>
+                        </div>
+
+                    <!-- LOGIN CON GOOGLE -->
+
+                    <div class="container w-100 my-4">
+                        <div class="row text-center"><br>
+                            <div class="row py-3">
+                                <button class="btn btn-outline-danger w-100 my-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-2 d-none d-md-block">
+                                            <img src="../assets/images/google.svg" width="32" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center">
+                                            Ingresar con Google
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+
