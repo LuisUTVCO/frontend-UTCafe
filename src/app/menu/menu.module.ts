@@ -7,6 +7,7 @@ import { BebidasComponent } from './bebidas/bebidas.component';
 import { PostresComponent } from './postres/postres.component';
 import { MenuComponent } from './menu/menu.component';
 import { MetodoPagoComponent } from './metodo-pago/metodo-pago.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MetodoPagoComponent } from './metodo-pago/metodo-pago.component';
     BebidasComponent,
     PostresComponent,
     MenuComponent,
-    MetodoPagoComponent
+    MetodoPagoComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,

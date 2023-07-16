@@ -5,6 +5,7 @@ import { BebidasComponent } from './bebidas/bebidas.component';
 import { PostresComponent } from './postres/postres.component';
 import { MenuComponent } from './menu/menu.component';
 import { MetodoPagoComponent } from './metodo-pago/metodo-pago.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'metodo-pago',
     component: MetodoPagoComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: '**',

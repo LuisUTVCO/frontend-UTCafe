@@ -11,6 +11,9 @@ import { InicioComponent } from './shared/inicio/inicio.component';
 import { PaginaErrorComponent } from './shared/pagina-error/pagina-error.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +23,15 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     SobreNosotrosComponent,
     InicioComponent,
     PaginaErrorComponent,
-    ContactoComponent
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+
+    // Librerias de Angular Material
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
