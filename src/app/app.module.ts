@@ -7,6 +7,9 @@ import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
 import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
+import { InicioComponent } from './shared/inicio/inicio.component';
+import { PaginaErrorComponent } from './shared/pagina-error/pagina-error.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotr
     LoginComponent,
     RegistroComponent,
     PerfilUsuarioComponent,
-    SobreNosotrosComponent
+    SobreNosotrosComponent,
+    InicioComponent,
+    PaginaErrorComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
