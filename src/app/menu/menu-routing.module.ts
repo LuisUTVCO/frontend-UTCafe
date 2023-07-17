@@ -10,36 +10,37 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: '/home'
-  },
-  {
-    path: 'alimentos',
-    component: AlimentosComponent
-  },
-  {
-    path: 'bebidas',
-    component: BebidasComponent
-  },
-  {
-    path: 'postres',
-    component: PostresComponent
-  },
-  {
-    path: 'menu',
-    component: MenuComponent
-  },
-  {
-    path: 'metodo-pago',
-    component: MetodoPagoComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: '**',
-    redirectTo: '/pagina-error'
+    component: MenuComponent,
+    children: [
+      {
+        path: 'alimentos',
+        component: AlimentosComponent
+      },
+      {
+        path: 'bebidas',
+        component: BebidasComponent
+      },
+      {
+        path: 'postres',
+        component: PostresComponent
+      },
+      {
+        path: 'menu',
+        component: MenuComponent
+      },
+      {
+        path: 'metodo-pago',
+        component: MetodoPagoComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'page-error'
+      }
+    ]
   }
 ];
 
