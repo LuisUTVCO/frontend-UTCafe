@@ -1,1 +1,57 @@
-<p>menu works!</p>
+<mat-sidenav-container>
+    <mat-sidenav #menu>
+        <mat-toolbar>
+            <span><img src="assets/images/logo.png" alt="" class="logo">&nbsp;&nbsp;&nbsp;<strong>Menú</strong>&nbsp;&nbsp;&nbsp;</span>
+            <button mat-icon-button (click)="menu.toggle()">
+                <mat-icon mat-list-icon class="25">menu</mat-icon>
+            </button>
+        </mat-toolbar>
+        
+        <mat-nav-list>
+
+            <a (click)="menu.toggle()" mat-list-item routerLink="/menu/alimentos">
+                <mat-icon mat-list-icon class="18"> lunch_dining </mat-icon> <span>&nbsp;Almuerzos</span>
+            </a>
+            <a (click)="menu.toggle()" mat-list-item routerLink="/menu/bebidas">
+                <mat-icon mat-list-icon class="18"> local_cafe </mat-icon> <span>&nbsp;Bebidas</span>
+            </a>
+
+            <a (click)="menu.toggle()" mat-list-item routerLink="/menu/postres">
+                <mat-icon mat-list-icon class="18"> icecream </mat-icon> <span>&nbsp;Postres</span>
+            </a>
+
+            <a (click)="menu.toggle()" mat-list-item routerLink="/contacto">
+                <mat-icon mat-list-icon class="18"> storefront </mat-icon> <span> Contacto </span>
+            </a>
+
+            <a (click)="menu.toggle()" mat-list-item routerLink="/perfil-usuario">
+                <mat-icon mat-list-icon class="18"> account_circle </mat-icon> <span>&nbsp;Perfil</span>
+            </a>
+
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-toolbar>
+
+        <button mat-icon-button (click)="menu.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <!--
+
+            <div class="foto-usuario">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" routerLink="/perfil-usuario">
+                    <mat-icon>account_circle</mat-icon>
+                </button>
+            </div>
+        </div> -->
+
+    </mat-toolbar>
+
+    <div class="contenedor">
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-sidenav-container>

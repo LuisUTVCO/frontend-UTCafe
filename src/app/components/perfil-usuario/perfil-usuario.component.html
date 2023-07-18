@@ -1,27 +1,33 @@
-<!-- Column -->
-<div class="card"> <img class="card-img-top"
-    src="https://img.freepik.com/vector-premium/paisaje-urbano-verano-larga-noche-horizontal-panorama-ciudad-ilustracion-plana_318844-225.jpg?w=2000"
-    alt="Card image cap">
-<div class="card-body little-profile text-center">
-    <div class="pro-img"><img src='/assets/images/client1.jpg' alt="user"></div>
-    <h1 class="m-b-2"><strong>Nombre </strong>
-        <mat-icon mat-list-icon class="18" style="cursor: pointer"> edit </mat-icon>
-    </h1>
-    <h3>Email</h3><br>
-    <a class="btn btn-primary" routerLink="/menu/home">Regresar</a>
-    <div class="row text-center m-t-20">
-        <div class="col-lg-4 col-md-4 m-t-20">
-            <h3 class="m-b-0 font-light"><strong>Perfil</strong></h3>
-            <h2>Perfil</h2>
+<section class="perfil-usuario">
+    <div class="contenedor-perfil">
+        <div class="portada-perfil" style="background-image: url('assets/images/cafeteria.jpg');">
+            <div class="sombra"></div>
+            <div class="avatar-perfil">
+                <img src="assets/images/client1.jpg" alt="img">
+                <a href="#" class="cambiar-foto">
+                    <i class="fas fa-camera"></i> 
+                    <span>Cambiar foto</span>
+                </a>
+            </div>
+            <div class="datos-perfil">
+                <h4 class="titulo-usuario">Lionel Andres Messi</h4>
+                <p class="bio-usuario">Usuario de la cafetería universitaria de la UTVCO.</p>
+                <ul class="lista-perfil">
+                    <li><strong>Grupo:</strong> DGS-901</li>
+                    <li><strong>Teléfono:</strong> 9512574125</li>
+                    <li><strong>Email:</strong> epale123@gmail.com</li>
+                </ul>
+            </div>
+            <div class="opcciones-perfil">
+                <button routerLink="/menu/home"><mat-icon>logout</mat-icon></button>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-4 m-t-20">
-            <h3 class="m-b-0 font-light"><strong>Teléfono</strong></h3>
-            <h2>Número</h2>
-        </div>
-        <div class="col-lg-4 col-md-4 m-t-20">
-            <h3 class="m-b-0 font-light"><strong>Uid</strong></h3>
-            <h2>UID</h2>
+        <div class="menu-perfil">
+            <ul>
+                <li><a href="#" title=""><i class="icono-perfil fas fa-bullhorn"></i>Favoritos</a></li>
+                <li><a href="menu/home" title=""><i class="icono-perfil fas fa-info-circle"></i>Menú</a></li>
+                <li><a href="#" title=""><i class="icono-perfil fas fa-grin"></i>Compras</a></li>
+            </ul>
         </div>
     </div>
-</div>
-</div>
+</section>
