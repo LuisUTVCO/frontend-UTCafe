@@ -6,6 +6,7 @@ import { PostresComponent } from './postres/postres.component';
 import { MenuComponent } from './menu/menu.component';
 import { MetodoPagoComponent } from './metodo-pago/metodo-pago.component';
 import { HomeComponent } from './home/home.component';
+import { FavoritosComponent } from './favoritos/favoritos.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent
+      },
+      {
+        path: 'favoritos',
+        component: FavoritosComponent
       },
       {
         path: '**',

@@ -453,7 +453,7 @@ button {
 .e-nav__link:before {
     content: "";
     height: 200px;
-    background: #212121;
+    background: #0d97b0;
     position: absolute;
     top: 70px;
     right: 70px;

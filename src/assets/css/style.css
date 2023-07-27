@@ -182,7 +182,7 @@ a:focus {
 /* COLOR1 BARRA DE NAVEGACIÓN */
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #53CCEC;
+  color: #fdbe4a;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -246,7 +246,7 @@ a:focus {
 .user_option .order_online {
   display: inline-block;
   padding: 8px 30px;
-  background-color: #33b1ff;
+  background-color: #bd3b1b;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -255,7 +255,7 @@ a:focus {
 }
 
 .user_option .order_online:hover {
-  background-color: #e60073;
+  background-color: #f67f00;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -374,7 +374,7 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background-color: #b8d372;
+  background-color: #f67f00;
 }
 
 .slider_section .img-box img {
@@ -404,7 +404,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #b8d372;
+  background-color: #fdbe4a;
 }
 
 .offer_section {
@@ -475,7 +475,7 @@ a:focus {
 }
 
 .offer_section .box .detail-box a:hover {
-  background-color: #ffffff;
+  background-color: #f67f00;
 }
 
 .offer_section .box .detail-box a svg {
@@ -580,7 +580,7 @@ a:focus {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background: #ffbe33;
+  background: #f67f00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,7 +630,7 @@ a:focus {
 
 /* color1 hamburguesa */
 .about_section {
-  background: #4309a7;
+  background: #87270f;
   color: #ffffff;
 }
 
@@ -664,7 +664,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #47ff33;
+  background-color: #f67f00;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -674,7 +674,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #00e60c;
+  background-color: #fdbe4a;
 }
 
 .book_section {
@@ -1003,7 +1003,7 @@ a:focus {
 }
 
 .footer_section .footer_social a:hover {
-  color: #ffbe33;
+  color: #f67f00;
 }
 
 .footer_section .footer-info {
