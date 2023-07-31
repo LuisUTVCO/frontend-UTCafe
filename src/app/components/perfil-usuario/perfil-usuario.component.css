@@ -24,7 +24,7 @@ estilos de la utilidad
 Copiar esto
 =====================================*/
 .perfil-usuario {
-    background: linear-gradient(#3FD0F4, transparent);
+    background: linear-gradient(#bd3b1b, transparent);
     color: #333;
 }
 
@@ -60,6 +60,10 @@ Copiar esto
     width: 90%;
 }
 
+.fa-icon {
+    color: #bd3b1b;
+  }
+  
 .perfil-usuario .portada-perfil {
     display: block;
     background-size: cover;
@@ -157,8 +161,8 @@ Copiar esto
 .perfil-usuario .opcciones-perfil button {
     border: 0;
     padding: 8px 20px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, .5);
+    border-radius: 30px;
+    background-color: #bd3b1b;
     color: #fff;
     cursor: pointer;
 }
@@ -185,7 +189,7 @@ Copiar esto
 }
 
 .perfil-usuario .menu-perfil a:hover {
-    background-color: #4CB0C6;
+    background-color: #fdbe4a;
     color: #fff;
 }
 

@@ -1,113 +1,38 @@
 <body>
-    <footer class="footer_section">
-        <div class="media-block theme-bg-primary">
-            <div class="container">
-                <h4 class="text-white text-center mb-3">Aplicación Web Universitaria</h4>
-                <div class="section-intro text-center single-col-max mx-auto text-white mb-5">Para más información
-                    contáctarse a los medios oficiales, con gusto te resolveremos cualquier duda o aclaración.</div>
-                <div class="row gx-md-5">
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="ratio ratio-16x9">
-
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_oRQ1mPOwJs"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                        <!--//embed-responsive -->
-                    </div>
-                    <!--//col-->
-                    <div class="col-12 col-md-6 mb-md-5">
-                        <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sTFYQYSiTS0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                        <!--//embed-responsive -->
-                    </div>
-                    <!--//col-->
-                </div>
-                <!--//row-->
-            </div>
-            <!--//container-->
+    
+    <section id="contact">
+        <br>
+        <div class="sectionheader">
+            <h1 align="center">Contáctanos</h1>
         </div>
-        <!--//media-block-->
+        <article>
+            <div align="center">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 footer-col">
-                    <div class="footer_contact"><br>
-                        <h4>
-                            Contactános
-                        </h4>
-                        <div class="contact_link_box">
-                            <a href="https://goo.gl/maps/K6KG4AqmkhUTRpa66">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <span>
-                                    Av. Universidad S/N
-                                    San Pablo Huixtepec
-                                    Zimatlán, Oax.
-                                    C.P. 71265
-                                </span>
-                            </a>
-                            <a href="tel:9513995156">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span>
-                                    (52)+ 951 399 5156
-                                </span>
-                            </a>
-                            <a href="mailto:contacto@utvco.edu.mx">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <span>
-                                    contacto@utvco.edu.mx
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-col">
-                    <div class="footer_detail">
-                        <a href="" class="footer-logo"><br>
-                            UTCafé
-                        </a>
-                        <p>
-                            Aplicación web de cafetería universitaria de la Universidad Tecnologica de los Valles
-                            Centrales de Oaxaca.
-                        </p>
-                        <div class="footer_social">
-                            <a href="https://www.facebook.com/utvcoaxaca/?locale=es_LA">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://twitter.com/utvco?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.instagram.com/utvco/?hl=es">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-col"><br>
-                    <h4>
-                        Horario de servicio
-                    </h4>
-                    <p>
-                        De lunes a viernes
-                    </p>
-                    <p>
-                        10.00 Am - 3:00 Pm
-                    </p>
-                </div>
-            </div>
-            <div class="footer-info">
-                <p>
-                    <a href="https://www.facebook.com/dgsutvco/">© 2023 | Ingenieria en Desarrollo y Gestión de
-                        Software</a><br><br>
-                    <a href="https://utvco.edu.mx/" target="_blank">© 2023 | Universidad Tecnológica de los Valles
-                        Centrales de Oaxaca</a>
+                <p>Ingresa tus datos para poder recibir más información acerca de los servicios que ofrecemos,
+                    <strong>da
+                        click</strong> en el sobre y nos pondremos en contacto contigo lo más pronto posible.
                 </p>
+                <img src="assets/images/dezlizar.png" alt="..." class="imgClick">
             </div>
-        </div>
-    </footer>
+
+            <label for="checkcontact" class="contactbutton">
+                <div class="mail"></div>
+            </label><input id="checkcontact" type="checkbox">
+
+            <form action="https://formsubmit.co/d49e9965aa48b118a6906e679a5ff692" method="POST" class="contactform">
+                <p class="input_wrapper"><input type="text" name="Nombre" value="" id="contact_nom" required><label
+                        for="contact_nom">Nombre</label></p>
+                <p class="input_wrapper"><input type="text" name="Email" value="" id="contact_email" required><label
+                        for="contact_email">Email</label></p>
+                <p class="input_wrapper"><input type="text" name="Telefono" value="" id="contact_sujet" required><label
+                        for="contact_sujet">Teléfono</label></p>
+                <p class="textarea_wrapper"><textarea name="Mensaje" id="contact_message"
+                        placeholder="Ingresa algún mensaje (esta opción es opcional)..."></textarea></p>
+                <p class="submit_wrapper"><input type="submit" value="Enviar"></p>
+                <input type="hidden" name="_next" value="">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </article>
+        <a routerLink="/inicio" class="btn-flotante">Volver</a>
+    </section><br>
 </body>

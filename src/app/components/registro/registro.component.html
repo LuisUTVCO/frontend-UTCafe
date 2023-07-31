@@ -1,62 +1,83 @@
 <body>
-    <br>
-    <div class="container-fluid w-75 bg-primary rounded shadow">
-        <div class="row align-items-stretch">
-            <div class="col bg-white p-5 rounded-end">
-                <div class="text-center">
-                    <h1><strong><img src='https://cdn-icons-png.flaticon.com/512/476/476844.png' class='imgRedonda'>
-                            Registro de usuario</strong></h1>
-                    <br>
-                    <div class="container-fluid cew-5 mb-3">
-                        <div class="row">
-                            <div class="col">
-                                <div class="col-md-11 mb-3">
-                                    <label class="form-label"><strong>Nombre</strong></label>
-                                    <input type="text" class="form-control" maxlength="10"
-                                        onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
-                                        placeholder="Crea un nombre de usuario" required>
-                                </div>
-                            </div>
-                            <div class="cot">
-                                <div class="mb-3">
-                                    <label class="form-label"><strong>E-mail</strong></label>
-                                    <input type="email" class="form-control" placeholder="Ingresa un e-mail" required>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+  <div class="container-fluid w-75 bg-primary rounded shadow">
+    <div class="row align-items-stretch">
 
 
-                    <div class="container-fluid cew-8 mb-3">
-                        <div class="row">
-                            <div class="col">
-                                <div class="col-md-11 mb-3">
-                                    <label class="form-label"><strong>Contraseña</strong></label>
-                                    <input type="password" class="form-control" placeholder="Crea una contraseña"
-                                        min="6" max="10" required>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label class="form-label"><strong>Teléfono</strong></label>
-                                    <input type="input"
-                                        onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"
-                                        class="form-control" placeholder="Ingresa tu número de teléfono" maxlength="10">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="col bg-white p-5 rounded-end">
+        <div class="text-end">
+          <h2 align="center"><strong>
+              <!--<img src='https://cdn-icons-png.flaticon.com/512/476/476844.png' class='imgRedonda'> -->
+              Inscribirse</strong></h2>
+          <br>
+          <form action="https://formbold.com/s/FORM_ID" method="POST">
 
-
-                    <div class="mb-3">
-                        <label class="form-label"><strong>Imagen URL</strong>* <br> (Ingresa una URL diferente para foto
-                            de perfil)</label>
-                        <input type="url" class="form-control" placeholder="Ingresa una URL...">
-                    </div>
-                    <br>
-                    <button routerLink="/login" class="btn btn-primary">Registrarse</button>
-                </div>
+            <div class="formbold-mb-3">
+              <label for="address2" class="formbold-form-label">
+                <h5>
+                  <strong>Nombre o username:</strong>
+                </h5>
+              </label>
+              <input type="text" name="address2" id="address2" class="formbold-form-input" placeholder="Ingresa tu nombre"/>
             </div>
+
+            <div class="formbold-input-flex">
+              <div>
+                <label for="email" class="formbold-form-label">
+                  <h5>
+                    <strong>Correo:</strong>
+                  </h5>
+                </label>
+                <input type="email" name="email" id="email" class="formbold-form-input" placeholder="Ingresa un correo"/>
+              </div>
+              <div>
+                <label for="phone" class="formbold-form-label">
+                  <h5>
+                    <strong>
+                      Teléfono:
+                    </strong>
+                  </h5>
+                </label>
+                <input type="text" name="phone" id="phone" class="formbold-form-input" placeholder="Ingresa un número"/>
+              </div>
+            </div>
+
+            <div class="formbold-mb-3">
+              <label for="address" class="formbold-form-label">
+                <h5>
+                  <strong>
+                    Grupo u oficio:
+                  </strong>
+                </h5>
+              </label>
+              <input type="text" name="address" id="address" class="formbold-form-input" placeholder="Ingresar grupo o cargo dentro de la universidad"/>
+            </div>
+
+            <div class="formbold-mb-3">
+              <label for="address2" class="formbold-form-label">
+                <h5>
+                  <strong>
+                    Imagen de perfil:
+                  </strong>
+                </h5>
+              </label>
+              <input type="text" name="address2" id="address2" class="formbold-form-input" />
+            </div>
+
+            <div align="center">
+              <button class="formbold-btn" routerLink="/login"><strong>Registrarse</strong></button>
+            </div>
+          </form>
         </div>
-    </div><br>
+
+      </div>
+
+
+      <div class="col bg-login d-none d-lg-block col-md-10 col-lg-5 col-xl-6">
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
