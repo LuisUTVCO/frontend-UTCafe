@@ -25,6 +25,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ProductoComponent } from './producto/producto.component';
 
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -52,6 +54,7 @@ import { ProductoComponent } from './producto/producto.component';
     MatFormFieldModule,
     MatSelectModule,
     MatDatepickerModule,
+    MatDialogModule
   ],
   exports: [
     MatButtonModule,
